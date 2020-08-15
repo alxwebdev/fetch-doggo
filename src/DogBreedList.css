@@ -1,0 +1,93 @@
+.DogBreedList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DogBreedList img {
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+}
+
+.DogBreedList-polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+.DogBreedList-caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+
+.DogBreedList-btn {
+  align-self: center;
+  width: 15em;
+  padding: 1.5em;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  margin-top: 3em;
+  font-size: 1rem;
+}
+
+.DogBreedList-btn:hover {
+  background-color: darkslateblue;
+  cursor: pointer;
+}
+
+/* mobile style */
+
+@media only screen and (max-width: 600px) {
+  .DogBreedList img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+  }
+
+  .DogBreedList h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* animation */
+
+.wiggle {
+  animation-name: wobble;
+  animation-duration: 2s;
+}
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

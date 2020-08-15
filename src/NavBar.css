@@ -1,0 +1,28 @@
+.NavBar {
+  background: darkslateblue;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.7rem;
+  line-height: 1rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.NavBar a {
+  text-decoration: none;
+  color: rgba(144, 164, 174, 1);
+  transition: all 0.5s ease;
+  padding: 0 2rem;
+  letter-spacing: 0.2rem;
+}
+.NavBar a.Navbar-active {
+  color: white;
+}
+
+.fa-dog,
+.fa-paw {
+  font-size: 1.5rem;
+}
