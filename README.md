@@ -1,5 +1,5 @@
 # fetch-doggo
-App to fetch infinite dogs images - **Live Demo Link** https://fetchdoggo.netlify.app/
+React App to fetch infinite dogs images - **Live Demo Link** https://fetchdoggo.netlify.app/
 
 ![](images/fetchdoggopreview.gif)
 
